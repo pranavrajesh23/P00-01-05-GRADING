@@ -1,11 +1,22 @@
 #include<iostream>
 using namespace std;
 
-  
+string calculateGradeFunc(int markScored)
+{
+    if(markScored >= 80) {
+        return "A";
+    } else if(markScored >= 60) {
+        return "B";
+    } else if(markScored >= 50) {
+        return "C";
+    } else {
+        return "FAIL";
+    }
+}
 
 void displayGrade(int mark)
 {
-    string grade = calculateGrade(mark);
+    string grade = calculateGradeFunc(mark);
     cout<<"\nThe grade has been calculated successfully.\n";
     cout<<"\nThe grade for the mark "<<mark<<" is: "<<grade<<"\n";
 }
