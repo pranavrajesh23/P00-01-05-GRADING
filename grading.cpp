@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+
+// Function to calculate the grade based on the mark scored
 string calculateGradeFunc(int markScored)
 {
     if(markScored >= 80) {
@@ -14,6 +16,8 @@ string calculateGradeFunc(int markScored)
     }
 }
 
+
+// Function to display the grade based on the mark entered
 void displayGrade(int mark)
 {
     string grade = calculateGradeFunc(mark);
@@ -21,6 +25,7 @@ void displayGrade(int mark)
     cout<<"\nThe grade for the mark "<<mark<<" is: "<<grade<<"\n";
 }
 
+// Function to handle the initialisation and input of marks
 void initialisation()
 {
     cout<<"\nEnter the mark of the student: \n";
@@ -36,6 +41,7 @@ void initialisation()
     }
 }
 
+// Main function to start the grading program
 int main()
 {
     cout<<"Starting the grading program\n";
